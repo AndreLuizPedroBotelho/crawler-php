@@ -12,8 +12,6 @@
 $ git clone https://github.com/AndreLuizPedroBotelho/crawler-php.git
 ```
 
-&emsp;
-
 ### Installation
 
 ---
@@ -24,23 +22,17 @@ $ cd crawler-php
 $ composer install
 ```
 
-&emsp;
-
 ### Configure
 
 ---
 
 Configure server php
 
-&emsp;
-
 ### Usage
 
 ---
 
 Open project in browser
-
-&emsp;
 
 ### Required
 
