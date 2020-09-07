@@ -2,8 +2,6 @@
 
 ## Project development in php
 
-&emsp;
-
 ### Clone
 
 ---
