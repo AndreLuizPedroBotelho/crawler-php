@@ -1,13 +1,50 @@
 # Crawler-php
 
-## Projeto desevolvido em php
+## Project development in php
 
-### Instalação 
+&emsp;
 
-``` sh
+### Clone
+
+---
+
+```sh
+$ git clone https://github.com/AndreLuizPedroBotelho/crawler-php.git
+```
+
+&emsp;
+
+### Installation
+
+---
+
+```sh
+$ cd crawler-php
+
 $ composer install
 ```
 
-### Execução
+&emsp;
 
-Abrir projeto no browser 
+### Configure
+
+---
+
+Configure server php
+
+&emsp;
+
+### Usage
+
+---
+
+Open project in browser
+
+&emsp;
+
+### Required
+
+---
+
+- PHP > 7
+- Composer
