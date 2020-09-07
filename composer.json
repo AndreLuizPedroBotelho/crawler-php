@@ -1,0 +1,20 @@
+{
+  "name": "php-composer/crawler-php",
+  "description": "Project development with php using composer and Guzzle",
+  "require": {
+    "guzzlehttp/guzzle": "^7.0",
+    "symfony/dom-crawler": "^5.1",
+    "symfony/css-selector": "^5.1"
+  },
+  "authors": [
+    {
+      "name": "Andre Luiz Pedro Botelho",
+      "email": "andrepedrobotelho@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "test-andre\\": "src/"
+    }
+  }
+}
