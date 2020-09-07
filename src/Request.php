@@ -4,11 +4,16 @@ use \GuzzleHttp\Client;
 
 class Request
 {
-  public  static function getRequest(string $url)
-  {
-    $client = new Client();
+  public $client;
 
-    $response = $client->get($url);
+  function __construct()
+  {
+    $this->client = new Client();
+  }
+
+  public function getRequest(string $url)
+  {
+    $response = $this->client->get($url);
 
     return $response->getBody()->getContents();
   }
