@@ -1,19 +1,16 @@
 <?php
 
 use Symfony\Component\DomCrawler\Crawler;
-use \GuzzleHttp\Client;
+
+include 'Request.php';
 
 class CrawlerMG
 {
+
   public function execute()
   {
-    $client = new Client();
-
-    $response = $client->get('https://www.mg.gov.br/servico/agendar-visitas-guiadas-na-biblioteca-publica-estadual-de-minas-gerais');
-
-    $html = $response->getBody()->getContents();
-
-    $crawler = new Crawler($html);
+    $htmlRequest = Request::getRequest('https://www.mg.gov.br/servico/agendar-visitas-guiadas-na-biblioteca-publica-estadual-de-minas-gerais');
+    $crawler = new Crawler($htmlRequest);
 
     $main = $crawler->filter('div[id="conteudo-servico"]')->each(function ($contentContainer) {
       /** @var \Symfony\Component\DomCrawler\Crawler $contentContainer */

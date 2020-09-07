@@ -9,7 +9,6 @@ $fp = fopen('results.json', 'w');
 fwrite($fp, json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
 fclose($fp);
 
-
 echo '<h2>Preview</h2>';
 
 $data = json_encode(json_decode(file_get_contents('results.json')), JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
