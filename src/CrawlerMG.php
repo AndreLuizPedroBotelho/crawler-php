@@ -68,10 +68,9 @@ class CrawlerMG
     });
 
     return [
-      'Título' => $crawler->filter('h1.page-header')->text(),
-      'Principal' => $main,
+      "Título" => $crawler->filter('h1.page-header')->text(),
+      "Principal" => $main,
       "Unidades onde o serviço é prestado" => $service
-
     ];
   }
 }
